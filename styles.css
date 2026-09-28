@@ -62,8 +62,7 @@ a:hover { color: var(--accent-dark); }
 .hero .tagline { font-size: 20px; font-weight: 600; margin: 0 0 12px; }
 .hero p { font-size: 17px; color: var(--muted); max-width: 60ch; margin: 0 auto 24px; }
 
-/* CTA — lien inactif tant que la fiche Play n'est pas publiée (href="#").
-   Au lancement : passer background sur var(--accent) et color sur #fff. */
+/* CTA — lien vers la fiche Google Play */
 .cta {
   display: inline-flex;
   align-items: center;
@@ -74,13 +73,22 @@ a:hover { color: var(--accent-dark); }
   font-size: 16px;
   font-family: inherit;
   text-decoration: none;
-  border: 1px solid var(--border);
-  background: var(--bg-alt);
-  color: var(--muted);
-  cursor: default;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
 }
+.cta:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
 .cta svg { flex: 0 0 auto; }
-.cta-note { display: block; margin-top: 10px; font-size: 13px; color: var(--muted); }
+
+/* Page de redirection /app */
+.redirect { display: flex; align-items: center; min-height: 100vh; padding: 40px 0; text-align: center; }
+.redirect .redirect-logo { width: 88px; height: 88px; border-radius: 22px; display: block; margin: 0 auto 20px; }
+.redirect h1 { font-size: 28px; line-height: 1.2; margin: 0 0 12px; }
+.redirect p { font-size: 17px; color: var(--muted); max-width: 46ch; margin: 0 auto 24px; }
+.redirect .redirect-note { font-size: 13px; margin: 20px auto 0; }
+.redirect .redirect-note a { color: var(--muted); }
+@media (min-width: 640px) { .redirect h1 { font-size: 34px; } }
 
 /* Sections */
 section { padding: 44px 0; }

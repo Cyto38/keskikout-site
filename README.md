@@ -9,6 +9,7 @@ HTML/CSS statique, sans framework, hébergé sur **GitHub Pages**.
 - `en/index.html` — accueil EN
 - `confidentialite/index.html` — politique de confidentialité FR (URL Play Console)
 - `en/privacy/index.html` — privacy policy EN
+- `app/index.html`, `en/app/index.html` — passerelle : redirection vers la fiche Google Play (`keskikout.fr/app`)
 
 ## Design
 Sobre, mobile-first, aligné sur l'app : accent `#7C3AED`, fond clair, police système.
@@ -21,8 +22,4 @@ Pages 100 % statiques : ouvrir un fichier `.html` dans le navigateur, ou servir 
 (`python -m http.server`). Aucune build.
 
 ## Emplacements à compléter avant lancement
-- Lien Google Play : le bouton « Bientôt sur Google Play » pointe sur `href="#"` dans
-  `index.html` et `en/index.html` — à remplacer par l'URL de la fiche Play.
-  Au passage, repasser `.cta` (dans `styles.css`) en bouton actif : `background: var(--accent)`,
-  `color: #fff`, `cursor: pointer`.
 - Captures d'écran dans le hero.
